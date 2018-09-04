@@ -5,6 +5,23 @@ public class Locatario {
 	private String dtNascimento;
 	private String cpf;
 	private String contaBancaria;
+	
+	
+	public void exibir () {
+		System.out.printf("%s, nascido em %s, inscrito no CPF nº %s, conta bancária %s.\n",
+				nome,
+				dtNascimento,
+				cpf,
+				contaBancaria);
+	}
+	
+	public Locatario () {
+		nome = "Tião Macalé";
+		dtNascimento = "31/02/1999";
+		cpf = "099.999.999-09";
+		contaBancaria = "9999 9999-9";
+	}
+	
 	public String getNome() {
 		return nome;
 	}

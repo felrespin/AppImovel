@@ -8,8 +8,14 @@ public class Imovel {
 	private float iptu;
 	private boolean vencimento = false;
 
+	private Contato contato;
+	private Locatario locatario;
+	
 	public void exibir() {
 		System.out.println("");
+		
+		contato.exibir();
+		locatario.exibir();
 	}
 	
 	

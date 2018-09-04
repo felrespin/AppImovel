@@ -1,6 +1,6 @@
 package auxiliar;
 
 public class Constante {
-	private final double JUROS = 0.5;
-	private final double MORA = 2.0;
+	public static final double JUROS = 0.5;
+	public static double MORA = 2.0;
 }

@@ -8,7 +8,17 @@ public class Contato {
 		
 	
 	public void exibir () {
-		System.out.println();
+		System.out.printf("Situado a %s , na cidade de %s com o CEP %s no estado %s.\n",
+				endereco,
+				cidade,
+				cep,uf);
+	}
+	
+	public Contato () {
+		endereco = "Rua São José, 90";
+		cidade = "Rio de Janeiro";
+		cep = "24230-321";
+		uf = "RJ";
 	}
 	
 	public String getEndereco() {
