@@ -1,21 +1,29 @@
 package negocio;
 
+import java.util.Arrays;
+
 public class Imovel {
 	
-	private float cotaOrdinaria;
-	private float cotaExtra;
-	private float txGas;
-	private float iptu;
-	private boolean vencimento = false;
-
-	private Contato contato;
-	private Locatario locatario;
+	private float cotaOrdinaria = 500;
+	private float cotaExtra =10;
+	private float txGas = 5;
+	private float iptu = 99;
+	private String [] comodos = {"2 quartos","cozinha","garagem"};
+	
+	
+	private double cacularAluguel() {
+						
+		return cotaOrdinaria + cotaExtra + txGas + iptu;
+	}
 	
 	public void exibir() {
-		System.out.println("");
-		
-		contato.exibir();
-		locatario.exibir();
+		System.out.println("O valor do aluguel é R$ " + cacularAluguel () +
+				"\nPagavel até o dia 10 em qualquer agência bancária");
+
+	}
+	
+	public void exibirComodos() {
+		System.out.printf("O imóvel possui %s\n", Arrays.deepToString(comodos));
 	}
 	
 	
@@ -43,11 +51,5 @@ public class Imovel {
 	public void setIptu(float iptu) {
 		this.iptu = iptu;
 	}
-	public boolean isVencimento() {
-		return vencimento;
-	}
-	public void setVencimento(boolean vencimento) {
-		this.vencimento = vencimento;
-	}
-
+	
 }
