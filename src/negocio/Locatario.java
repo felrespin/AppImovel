@@ -2,44 +2,66 @@ package negocio;
 
 public class Locatario {
 	
-	
-	private String endereco;
-	private String dtNascimento;
+	private String nomeMae;
+	private String nomeContatoSos;
+	private String telContatoSos;
+	private String emailContatoSos;
 	
 	
 	public void exibir () {
-		//System.out.printf("CPF: %s \n",
-			//	cpf
-			//	);
+		System.out.printf("Nome da mae: %s \n"
+						+ "Para emergências:\n"
+						+"Contato: %s\n"
+						+ "telefone: %s\n"
+						+ "email: %s\n",
+						nomeMae,
+						nomeContatoSos,
+						telContatoSos,
+						emailContatoSos);
 	}
 	
 	public Locatario () {
 			
-		endereco = "Rua das avenidas,99 apto 101 bl1";
-		dtNascimento = "31/02/1999";
+		nomeMae = "Mae do locatario";
+		nomeContatoSos = "Locatario Recado";
+		telContatoSos = "21 9 9999-9999";
+		emailContatoSos = "locatarioemail@email.com";
+		
 	}
-
 
 	
-	public String getEndereco() {
-		return endereco;
-	}
-
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-
-
-	public String getDtNascimento() {
-		return dtNascimento;
-	}
-
-
-	public void setDtNascimento(String dtNascimento) {
-		this.dtNascimento = dtNascimento;
-	}
 	
-	
-	
+	public String getNomeMae() {
+		return nomeMae;
+	}
+
+	public void setNomeMae(String nomeMae) {
+		this.nomeMae = nomeMae;
+	}
+
+	public String getNomeContatoSos() {
+		return nomeContatoSos;
+	}
+
+	public void setNomeContatoSos(String nomeContatoSos) {
+		this.nomeContatoSos = nomeContatoSos;
+	}
+
+	public String getTelContatoSos() {
+		return telContatoSos;
+	}
+
+	public void setTelContatoSos(String telContatoSos) {
+		this.telContatoSos = telContatoSos;
+	}
+
+	public String getEmailContatoSos() {
+		return emailContatoSos;
+	}
+
+	public void setEmailContatoSos(String emailContatoSos) {
+		this.emailContatoSos = emailContatoSos;
+	}
+
+		
 }

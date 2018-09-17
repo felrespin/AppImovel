@@ -1,7 +1,7 @@
 package teste;
 
 import negocio.Contato;
-//import negocio.Locatario;
+import negocio.Locatario;
 import negocio.Proprietario;
 import negocio.Imovel;
 
@@ -19,8 +19,8 @@ public class TestaApp {
 		Proprietario p1 = new Proprietario();
 		p1.exibir();
 		
-		//Locatario l1 = new Locatario ();
-		//l1.exibir();
+		Locatario l1 = new Locatario ();
+		l1.exibir();
 						
 	}
 }
